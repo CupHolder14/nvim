@@ -46,6 +46,18 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+  {
+    "theprimeagen/vim-be-good",
+    lazy = false
+  },
+    {
+    "theprimeagen/harpoon",
+    lazy = false,
+    config = function()
+      require("custom.configs.harpoon")
+    end
+  }
+
 
   -- To make a plugin not be loaded
   -- {
