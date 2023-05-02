@@ -8,6 +8,14 @@ local opt = vim.opt
 -- })
 
 autocmd("FileType", {
+    pattern = "*",
+    callback = function()
+        opt.tabstop = 2
+        opt.shiftwidth = 2
+    end,
+})
+
+autocmd("FileType", {
   pattern = "php",
   callback = function()
     opt.tabstop = 4
@@ -15,10 +23,3 @@ autocmd("FileType", {
   end,
 })
 
-autocmd("FileType", {
-  pattern = "*",
-  callback = function()
-    opt.tabstop = 2
-    opt.shiftwidth = 2
-  end,
-})
