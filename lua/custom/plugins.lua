@@ -50,13 +50,17 @@ local plugins = {
     "theprimeagen/vim-be-good",
     lazy = false
   },
-    {
+  {
     "theprimeagen/harpoon",
     lazy = false,
     config = function()
       require("custom.configs.harpoon")
     end
-  }
+  },
+  {
+    "github/copilot.vim",
+    lazy = false,
+  },
 
 
   -- To make a plugin not be loaded
